@@ -1,0 +1,11 @@
+/* Estilos personalizados */
+.vh-75 { min-height: 75vh; }
+.hero-slide { background-size: cover; background-position: center; position: relative; }
+.hero-slide::before { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,.45); }
+.hero-slide > .container { position: relative; z-index: 2; }
+
+.hero-1 { background-image: url('img/slide1.jpg'); }
+.hero-2 { background-image: url('img/slide2.jpg'); }
+.hero-3 { background-image: url('img/slide3.jpg'); }
+
+.avatar { width: 96px; height: 96px; background: #e9ecef; border-radius: 50%; margin-inline: auto; }
