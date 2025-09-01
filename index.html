@@ -3,29 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gestão Hospitalar</title>
+    <title>Gestao Hospitalar</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-
-    <style>
-      /* Rolagem suave */
-      html {
-        scroll-behavior: smooth;
-      }
-
-      /* Compensar altura da navbar fixa */
-      section {
-        scroll-margin-top: 80px;
-      }
-    </style>
   </head>
   <body>
-    <!-- Header -->
+    
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#home">
           <img src="assets/img/Logotipo.png" alt="Logótipo" width="36" height="36" class="me-2 rounded">
-          <span class="fw-bold">Gestão Hospitalar</span>
+          <span class="fw-bold">Gestao Hospitalar</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
@@ -41,5 +29,230 @@
         </div>
       </div>
     </nav>
+    <header id="home" class="bg-light">
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
 
-    <!-- resto do teu código continua igual -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+   
+    <div class="carousel-inner">
+
+      <div class="carousel-item active vh-75 text-white hero-slide" 
+           style="background-image: url('assets/img/woman-african-ethnicity-working-as-doctor-medical-cabinet.jpg'); 
+                  background-size: cover; 
+                  background-position: center; 
+                  background-repeat: no-repeat;">
+        <div class="container h-100 d-flex flex-column justify-content-center">
+          <h1 class="display-5 fw-bold">Sistema de Gestão Hospitalar</h1>
+          <p class="lead">Registos clínicos, triagem, farmácia e relatórios num único lugar.</p>
+          <a href="#servicos" class="btn btn-primary btn-lg">Ver Serviços</a>
+        </div>
+      </div>
+
+      <div class="carousel-item vh-75 text-white hero-slide" 
+           style="background-image: url('assets/img/front-view-man-wearing-face-mask.jpg'); 
+                  background-size: cover; 
+                  background-position: center; 
+                  background-repeat: no-repeat;">
+        <div class="container h-100 d-flex flex-column justify-content-center">
+          <h2 class="display-6 fw-bold">Integração com OpenMRS &amp; DISALink</h2>
+          <p class="lead">Integre dados e reduza erros de digitação com fluxos otimizados.</p>
+          <a href="#departamentos" class="btn btn-outline-light btn-lg">Departamentos</a>
+        </div>
+      </div>
+
+      <div class="carousel-item vh-75 text-white hero-slide" 
+           style="background-image: url('assets/img/close-up-nurse-signing-files-wtih-help-from-doctor-healthcare-cabinet.jpg'); 
+                  background-size: cover; 
+                  background-position: center; 
+                  background-repeat: no-repeat;">
+        <div class="container h-100 d-flex flex-column justify-content-center">
+          <h2 class="display-6 fw-bold">Relatórios e Indicadores</h2>
+          <p class="lead">Dashboards para M&A, consultas, internações e farmácia.</p>
+          <a href="#contacto" class="btn btn-success btn-lg">Contacte-nos</a>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Seguinte</span>
+    </button>
+
+  </div>
+</header>
+
+
+    <main>
+      <section id="servicos" class="py-5">
+        <div class="container">
+          <div class="text-center mb-4">
+            <h2 class="fw-bold">Serviços</h2>
+            <p class="text-muted">Módulos principais do sistema</p>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Registo de Pacientes</h5>
+                  <p class="card-text">Cadastro, triagem e histórico com interoperabilidade.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Consultas &amp; Internações</h5>
+                  <p class="card-text">Agenda médica, prontuários e gestão de leitos.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Farmácia</h5>
+                  <p class="card-text">Dispensa, inventário e relatórios de consumo.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Relatórios M&amp;A</h5>
+                  <p class="card-text">Indicadores, metas e exportação para Excel.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="departamentos" class="py-5 bg-light">
+        <div class="container">
+          <div class="text-center mb-4">
+            <h2 class="fw-bold">Departamentos</h2>
+            <p class="text-muted">Áreas de atendimento</p>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="p-4 border rounded-3 h-100">
+                <h5>Urgência</h5>
+                <p>Fluxos rápidos de triagem e atendimento crítico.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-4 border rounded-3 h-100">
+                <h5>Cuidados Materno-Infantis</h5>
+                <p>Pré-natal, parto e puerpério com registos completos.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-4 border rounded-3 h-100">
+                <h5>Doenças Crónicas</h5>
+                <p>HIV, TB, hipertensão e diabetes com seguimento.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="equipa" class="py-5">
+        <div class="container">
+          <div class="text-center mb-4">
+            <h2 class="fw-bold">Equipa</h2>
+            <p class="text-muted">Profissionais que fazem acontecer</p>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="text-center">
+                <img src="assets/img/Foto 1.jpg" alt="DRa. Lina N." class="rounded-circle mb-3" width="120" height="120">
+                <h6 class="mb-0">Dra. Lina N.</h6>
+                <small class="text-muted">Clínica Geral</small>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="text-center">
+    <img src="assets/img/Fota 2.jpg" alt="Enf. Carlos M." class="rounded-circle mb-3" width="120" height="120">
+    <h6 class="mb-0">Enf. Carlos M.</h6>
+    <small class="text-muted">Enfermagem</small>
+</div>
+
+            </div>
+            <div class="col-md-4">
+              <div class="text-center">
+                <img src="assets/img/Foto3.jpg" alt="Tec. Joana S." class="rounded-circle mb-3" width="120" height="120">
+                <h6 class="mb-0">Tec. Joana S.</h6>
+                <small class="text-muted">Farmácia</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="py-5 bg-light">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <h2 class="fw-bold mb-3 text-center">Fale Connosco</h2>
+              <p class="text-muted text-center">Preencha o formulário que responderemos em breve.</p>
+              <form id="contactForm" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label">Nome</label>
+                    <input type="text" name="nome" class="form-control" required>
+                    <div class="invalid-feedback">Informe o seu nome.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">E-mail</label>
+                    <input type="email" name="email" class="form-control" required>
+                    <div class="invalid-feedback">Informe um e-mail válido.</div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Assunto</label>
+                    <input type="text" name="assunto" class="form-control" required>
+                    <div class="invalid-feedback">Informe o assunto.</div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Mensagem</label>
+                    <textarea name="mensagem" class="form-control" rows="5" required></textarea>
+                    <div class="invalid-feedback">Escreva a sua mensagem.</div>
+                  </div>
+                  <div class="col-12 d-flex gap-2">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="button" id="btnLimpar" class="btn btn-secondary">Limpar</button>
+                  </div>
+                </div>
+              </form>
+              <div id="formAlert" class="alert alert-success mt-3 d-none" role="alert">
+                Mensagem validada com sucesso (demonstração). Substitua por integração real (PHP/Email).
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-4 border-top">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <div class="small text-muted">
+          Edmilson Victor Cossa — © Copyright 2025 • Gestão Hospitalar
+        </div>
+        <div class="small">
+          Template selecionado: <a href="https://bootstrapmade.com/bizpage-bootstrap-business-template/" target="_blank" rel="noopener">BizPage by BootstrapMade</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
